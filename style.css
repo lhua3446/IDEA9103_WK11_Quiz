@@ -1,0 +1,14 @@
+#svg-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#blank {
+    fill:aliceblue;
+    stroke: black;
+}
+
+#fill {
+    fill:antiquewhite;
+    stroke: black;
+}
