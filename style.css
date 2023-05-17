@@ -3,12 +3,22 @@
     height: 100%;
 }
 
-#blank {
-    fill:aliceblue;
-    stroke: black;
-}
-
-#fill {
-    fill:antiquewhite;
-    stroke: black;
-}
+.container {  display: grid;
+    grid-template-columns: 0.1fr 2.3fr 1.5fr .9fr;
+    grid-template-rows: .5fr 1.8fr 0.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "grid-header grid-header grid-header grid-header"
+      ". grid-text grid-svg grid-svg"
+      ". grid-text grid-controls grid-controls";
+  }
+  
+  .grid-header { grid-area: grid-header; }
+  
+  .grid-text { grid-area: grid-text; }
+  
+  .grid-svg { grid-area: grid-svg; }
+  
+  .grid-controls { grid-area: grid-controls; }
+  

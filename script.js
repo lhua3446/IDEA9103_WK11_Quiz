@@ -64,7 +64,7 @@ class Particle {
       this.svgElement.appendChild(animElement);
 
     }
-  
+
   }
   
   // A random number between a specified range
@@ -112,19 +112,11 @@ function randomNum(lower, upper) {
     return particleInstances;
   }
   
-  // Initialise width to be the width of the browser window
   let width = window.innerWidth;
-  // Initialise height to be the height of the browser window
   let height = window.innerHeight;
-  // Using window.innerWidth/window.innerHeight allows our 
-  // SVG canvas to accommodate the size of our browser
   
-  // Call our createParticlesArray() function to create the
-  // array of Particle instances
   let particles = createParticlesArray(50);
-  
-  // For every Particle instance in our array
-  // call the drawParticle() method
+
   for (let particle of particles) {
     particle.drawParticle();
   }
